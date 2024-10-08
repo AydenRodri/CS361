@@ -35,7 +35,7 @@ public class MyStack<T> {
 	public T pop() {
 		// TODO To complete
 		if (theStack == null) {
-            throw new RuntimeException("Stack is empty");
+	            System.out.println("Stack is empty");
         }
         T value = theStack.val;
         theStack = theStack.next;

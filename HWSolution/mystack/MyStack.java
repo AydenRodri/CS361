@@ -58,17 +58,19 @@ public class MyStack<T> {
 		// Pop
 		// Push 5
 		MyStack<Integer> intStack = new MyStack<>();
-        intStack.push(1);
-        intStack.push(2);
+        	intStack.push(1);
+        	intStack.push(2);
 		intStack.pop();
-        intStack.push(5);
+        	intStack.push(5);
 		
 		// TODO To complete
 		// Create a stack of Person
 		// Push a person p1 with your name
 		// Push a person p2 with my name
 		MyStack<Person> personStack = new MyStack<>();
-        personStack.push(new Person("Ayden", "Rodriguez"));
-        personStack.push(new Person("Christelle", "Scharff"));
+        	Person p1 = new Person("Ayden", "Rodriguez");
+        	Person p2 = new Person("Christelle", "Scharff");
+		personStack.push(p1);
+		personStack.push(p2);
     }
 }

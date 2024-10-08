@@ -8,8 +8,7 @@ public class InnerOuter {
         int innermostResult = innermostEvaluation(5);
         System.out.println("Result of innermost evaluation: " + innermostResult);
     }
-
-    // Outermost Evaluation Example
+    
     public static int outermostEvaluation(int n) {
         System.out.println("Entering outermost with n = " + n);
         if (n <= 0) {
@@ -21,8 +20,7 @@ public class InnerOuter {
             return value;
         }
     }
-
-    // Innermost Evaluation Example
+    
     public static int innermostEvaluation(int n) {
         System.out.println("Entering innermost with n = " + n);
         if (n <= 0) {

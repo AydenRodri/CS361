@@ -59,18 +59,17 @@ public class DemoCircle {
 		// TODO print c2 with toString
 		System.out.println(c2.toString());
 		// TODO make a deep copy of c1 with clone and assign it to c3
-		Circle c3 = null;
+		// TODO write a conditional that checks that c3.equals(c1) is true and print "c3.equals(c1) is true" or "c3.equals(c1) is false" otherwise
 		try{
-			c3 = (Circle) c1.clone();
+			Circle c3 = (Circle) c1.clone();
+			if(c3.equals(c1)){
+				System.out.println("c3 is a clone of c1");
+			}
+			else{
+				System.out.println("c3 is not a clone of c1");
+			}
 		} catch (CloneNotSupportedException e){
 			e.printStackTrace();
-		}
-		// TODO write a conditional that checks that c3.equals(c1) is true and print "c3.equals(c1) is true" or "c3.equals(c1) is false" otherwise
-		if(c3.equals(c1)){
-			System.out.println("c3 is a clone of c1");
-		}
-		else{
-			System.out.println("c3 is not a clone of c1");
 		}
 
 	}

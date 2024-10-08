@@ -36,10 +36,10 @@ public class MyStack<T> {
 		// TODO To complete
 		if (theStack == null) {
 	            System.out.println("Stack is empty");
-        }
-        T value = theStack.val;
-        theStack = theStack.next;
-        return value;
+       		}
+        	T value = theStack.val;
+        	theStack = theStack.next;
+        	return value;
 	}
 
 	public void push(T v) {
